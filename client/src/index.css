@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotateText {
+  0% {
+    transform: translateY(0);
+  }
+  16% {
+    transform: translateY(-4rem);
+  }
+  33% {
+    transform: translateY(-8rem);
+  }
+  50% {
+    transform: translateY(-12rem);
+  }
+  66% {
+    transform: translateY(-16rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-rotate {
+  animation: rotateText 6s infinite ease-in-out;
+}
